@@ -15,15 +15,23 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <div className="search-bar ui segment">
+      <div
+        className="search-bar ui raised  padded segment"
+        style={{ margin: "30px 0" }}
+      >
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
-            <label>Video Search</label>
-            <input
-              type="text"
-              value={this.state.term}
-              onChange={this.onInputChange}
-            />
+            <label>
+              <h3>Video Search</h3>
+            </label>
+            <div class="ui large icon input">
+              <input
+                type="text"
+                value={this.state.term}
+                onChange={this.onInputChange}
+              />
+              <i class="search icon"></i>
+            </div>
           </div>
         </form>
       </div>

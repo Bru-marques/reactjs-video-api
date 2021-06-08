@@ -7,3 +7,7 @@
 .video-item.item img {
   max-width: 180px;
 }
+.video-desc {
+  color: rgb(109, 107, 107);
+  margin-top: 10px;
+}
